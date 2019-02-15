@@ -6,7 +6,7 @@ const path = require('path');
 const S3 = require('aws-sdk/clients/s3')
 
 const client = new S3({
-    region: 'us-east-1',
+    region: process.env.AWS_REGION,
     secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
     accessKeyId: process.env.AWS_ACCESS_KEY_ID,
     sessionToken: process.env.AWS_SESSION_TOKEN
@@ -56,5 +56,8 @@ const upload = () => {
     }
   });
 }
-    upload()
+
+upload()
+if (process.env.REFRESH_TIME !== undefined) {
     setInterval(upload, process.env.REFRESH_TIME);
+}
