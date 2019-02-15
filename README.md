@@ -18,7 +18,7 @@ AWS_REGION = The region that your bucket is in
 
 REFRESH_TIME = Refresh time for your uploads in milliseconds
 
-FOR CCFUN week4 exercise 3:
+## FOR CCFUN week4 exercise 3:
 
 My bucket has version control enabled. This allows me to see all the previous file versions and download them if necessary. Bucket versioning is a great tool to allow version control and recovery in case of mishaps.
 
