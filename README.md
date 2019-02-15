@@ -22,6 +22,6 @@ REFRESH_TIME = Refresh time for your uploads in milliseconds
 
 My bucket has version control enabled. This allows me to see all the previous file versions and download them if necessary. Bucket versioning is a great tool to allow version control and recovery in case of mishaps.
 
-I also added some lifetime cycles. Current versions are moved to standard-1A afetr 30 days. This is done because after 30 days it's fair to assume that either the script is no longer running and backup retrieval isn't as necessary.
+I also added some lifetime cycles. Current backup versions are moved to standard-1A after 30 days. This is done, because after 30 days it's fair to assume that either the script is no longer running and backup retrieval isn't very likely.
 
-Previous versions are moved to glacier after 30 days. This is done because a previous version of a backup is most likely not going to be retrieved after 30 days. If the script is no longer running and there is a current backup in standard-1A it can still be accessed quickly.
+Previous backup versions are moved to glacier after 30 days. This is done because a previous version of a backup is most likely not going to be retrieved after 30 days. If the script is no longer running and there is a current backup in standard-1A it can still be accessed quickly.
