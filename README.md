@@ -4,16 +4,16 @@ Node.js script that uploads changes in files in a directory to an S3 bucket peri
 
 Required .env fields. 
 
-AWS_ACCESS_KEY_ID = <Your aws access key id>
+AWS_ACCESS_KEY_ID = Your aws access key id
 
-AWS_SECRET_ACCESS_KEY = <your aws secret access key>
+AWS_SECRET_ACCESS_KEY = Your aws secret access key
 
-AWS_SESSION_TOKEN = <Your aws session token>
+AWS_SESSION_TOKEN = Your aws session token
 
-BUCKET_NAME = <Your bucket name>
+BUCKET_NAME = Your bucket name
 
-DIR_PATH = <File path to your local directory>
+DIR_PATH = File path to your local directory
 
-AWS_REGION = <The region that your bucket is in>
+AWS_REGION = The region that your bucket is in
 
-REFRESH_TIME = <Refresh time for your uploads in milliseconds>
+REFRESH_TIME = Refresh time for your uploads in milliseconds
